@@ -1,0 +1,58 @@
+<!doctype html>
+ <html>
+ <head>
+   <title>Playing with jQuery events</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <style>
+     .hidden {
+       display: none;
+     }
+     .read-more-button {
+       padding: 10px 20px;
+       background: darkblue;
+       color: white;
+     }
+   </style>
+ </head>
+ <body>
+   <h1>This is a headline</h1>
+   <h3>This is a subheadline</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac dui sit amet velit luctus placerat. Nulla congue eros vitae diam rutrum volutpat. Proin a lectus blandit, bibendum mi in, semper arcu. Integer imperdiet tortor id tortor dignissim mollis.</p>
+   <p>Aenean aliquam lacinia semper. Sed ipsum purus, malesuada ut sollicitudin sit amet, pulvinar suscipit sem. Fusce sollicitudin pretium ipsum non dictum. Integer tincidunt, dui luctus rutrum ullamcorper, ligula nibh pharetra leo, nec mollis eros mauris id sapien. Nulla et eleifend ligula.</p>
+   <p class="read-more-button">Read more</p>
+   <div class="read-more hidden">
+     <p>Sed mattis elit id justo maximus lobortis. Maecenas aliquam, neque egestas pretium efficitur, felis dolor malesuada dui, efficitur condimentum leo mauris dictum leo.</p>
+     <p>Nulla quis dignissim metus, vel suscipit lorem. Donec sit amet ligula ultricies, egestas justo sit amet, venenatis ex.</p>
+     <p>Sed et turpis nec sapien dapibus sodales vitae et ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris eget libero augue. Duis dignissim pharetra varius. Nullam a enim dictum, posuere nibh et, mollis lorem.</p>
+     <p>Mauris lorem nunc, gravida ut fringilla sed, pulvinar ac est. Donec finibus metus eu est congue volutpat. Curabitur risus nulla, efficitur ultricies felis vitae, tempus fringilla metus. Nam vitae nibh non neque vulputate sollicitudin. Etiam diam dolor, interdum sit amet tortor quis, pharetra tempor leo.</p>
+     <p>Quisque non nisl in ex tempor ornare vitae nec nisi. Ut scelerisque aliquam turpis, eu fringilla eros varius eu.</p>
+     <p>Proin ac aliquam tellus. Quisque non lacinia nunc. Nullam nunc leo, accumsan vitae varius in, accumsan ut justo. Sed quis auctor nunc, gravida tincidunt ex. Quisque id lacinia arcu. Integer auctor tellus vitae accumsan volutpat. In vitae suscipit purus. Quisque sed viverra sapien.</p>
+     <p>Integer vestibulum congue dolor, a sodales quam fringilla nec. Donec urna purus, eleifend sed velit ac, consequat cursus nisl. Ut volutpat laoreet dolor ut aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+     <p>Cras nisl tellus, finibus gravida efficitur quis, mattis eget ligula. Curabitur vitae tortor dictum, pellentesque metus quis, mattis magna. In vestibulum tincidunt nisi vel consectetur. Fusce bibendum luctus convallis. In hac habitasse platea dictumst.</p>
+     <p>In in ornare ex. Morbi lobortis sit amet diam sed placerat. Curabitur et lorem massa.</p>
+   </div>
+
+   <!-- add jQuery link HERE - above your code -->
+
+   <script>
+    /**
+     * Rememver that events are used like this:
+     * 1. Write a function to run every time the event happens:
+     *    function myEventsFunction() {
+     *       // do stuff
+     *    }
+     * 2. "Bind" the event to an HTML element and a specific event:
+     *    $('CSS SELECTOR FOR ELEMENT').on('NAME OF EVENT TO LISTEN TO', myEventsFunction);
+     */
+   </script>
+ </body>
+ <script>
+ function readMore() {
+
+   $('.read-more').removeClass('hidden');
+
+   $('.read-more-button').hide();
+ }
+
+ </script>
+ </html>
